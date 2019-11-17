@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: honeydew;
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color:#424242 ;
+  --heading-color: white;
+
+}
+
+legend{
+  color: var(--heading-color);
+}
+
+#maingames{
+  position: absolute;
+}
+
+#gameinfor{
+  margin: 10px;
+  color: var(--heading-color);
+  text-align: center;
+}
+
+#gameinfor img{
+  border-style: solid;
+  border-width: 2px;
+}
+
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 24px;
+
+}
+
+#logoutbutton {
+  display: none;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+}
+
+.collection .collection-item {
+  background-color: var(--bg-color) !important;
+  color: var(--heading-color) !important;
+}
+
+.tabs .tab {
+  background-color: var(--bg-color) !important;
+  color: var(--heading-color) !important;
+}
+
+.tab a{
+  color: var(--heading-color) !important;
+ }
+
+label{
+  color: var(--heading-color) !important;
+}
+
+.card {
+  background-color: var(--bg-color) !important;
+  color: var(--heading-color) !important;
+}
+
+#test3{
+  margin: 10px;
+}
+
+#gdesc{
+  margin-right: auto;
+}
+
+.select-wrapper input.select-dropdown{
+  color:white;
+}
+
+.card-image img{
+width: 200px;
+height: 200px;
+}
+
+.card-image{
+  width: 200px;
+  height: 200px;
+}
+
+.row .col.s12{
+  margin-left: 20px;
+}
+
+#hey, #hey1{
+  background-color: #26a69a;
+}
+
+.btn{
+  background-color: white;
+}
+
+.card .card-content{
+  padding: 10px;
+}
+
+#black{
+  color: black;
+}
+
+.file-field{
+  padding-right: 50px;
+}
+
+.roll{
+  padding: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+
+}
+
+.block{
+  background-color: #287fc2;
+  margin-left: 30px;
+}
+
+.collection .collection-item{
+  background-color: #424242;
+  color: white;
+}
+
+.lol{
+  width: 47%
+}
+
+#test3, #test2, #test4{
+  margin-left: 20px;
+}
+
+#gameinfo1{
+  display: block;
+}
