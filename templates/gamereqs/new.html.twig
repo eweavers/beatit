@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Gamereqs{% endblock %}
+
+{% block body %}
+    <h1>Create new Gamereqs</h1>
+
+    {{ include('gamereqs/_form.html.twig') }}
+
+    <a href="{{ path('gamereqs_index') }}">back to list</a>
+{% endblock %}
