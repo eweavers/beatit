@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gamereqs index{% endblock %}
+
+{% block body %}
+    <h1>Gamereqs index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Gamerid</th>
+                <th>Gametitle</th>
+                <th>Platforms</th>
+                <th>Gamedescription</th>
+                <th>Releasedate</th>
+                <th>Thumbnailurl</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for gamereq in gamereqs %}
+            <tr>
+                <td>{{ gamereq.gamerid }}</td>
+                <td>{{ gamereq.gametitle }}</td>
+                <td>{{ gamereq.platforms }}</td>
+                <td>{{ gamereq.gamedescription }}</td>
+                <td>{{ gamereq.releasedate }}</td>
+                <td>{{ gamereq.thumbnailurl }}</td>
+                <td>
+                    <a href="{{ path('gamereqs_show', {'gamerid': gamereq.gamerid}) }}">show</a>
+                    <a href="{{ path('gamereqs_edit', {'gamerid': gamereq.gamerid}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('gamereqs_new') }}">Create new</a>
+{% endblock %}

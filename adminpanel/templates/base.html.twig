@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ absolute_url(asset('css/css.css')) }}">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        {% endblock %}
+    </head>
+    <body>
+     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+        <nav>
+            <div class="nav-wrapper">
+            <ul>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/gamereqs">Game Requests</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <ul>
+            <div>
+        </nav>
+        {% else %}
+            <nav>
+            <a href="/login">Login</a>
+        </nav>
+        {% endif %}
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        {% endblock %}
+    </body>
+</html>
