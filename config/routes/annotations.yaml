@@ -1,8 +1,0 @@
-controllers:
-    resource: ../../src/Controller/
-    type: annotation
-
-homepage:
-    path: /login
-    defaults:  { _controller: AppBundle:Home:index}
-
