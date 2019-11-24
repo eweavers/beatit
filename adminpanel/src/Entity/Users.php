@@ -45,7 +45,7 @@ class Users
     /**
      * @var \Login
      *
-     * @ORM\ManyToOne(targetEntity="Login")
+     * @ORM\ManyToOne(targetEntity="Logins")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="loginID", referencedColumnName="loginID")
      * })
@@ -104,7 +104,7 @@ class Users
         return $this->loginid;
     }
 
-    public function setLoginid(?Login $loginid): self
+    public function setLoginid(?Logins $loginid): self
     {
         $this->loginid = $loginid;
 

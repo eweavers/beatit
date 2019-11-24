@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Logins{% endblock %}
+
+{% block body %}
+    <h1>Logins</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Loginid</th>
+                <td>{{ login.loginid }}</td>
+            </tr>
+            <tr>
+                <th>Username</th>
+                <td>{{ login.username }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ login.password }}</td>
+            </tr>
+            <tr>
+                <th>Accessrights</th>
+                <td>{{ login.accessrights }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('logins_index') }}">back to list</a>
+
+    <a href="{{ path('logins_edit', {'loginid': login.loginid}) }}">edit</a>
+
+    {{ include('logins/_delete_form.html.twig') }}
+{% endblock %}

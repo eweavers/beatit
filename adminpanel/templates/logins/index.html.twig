@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Logins index{% endblock %}
+
+{% block body %}
+    <h1>Logins index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Loginid</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Accessrights</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for login in logins %}
+            <tr>
+                <td>{{ login.loginid }}</td>
+                <td>{{ login.username }}</td>
+                <td>{{ login.password }}</td>
+                <td>{{ login.accessrights }}</td>
+                <td>
+                    <a href="{{ path('logins_show', {'loginid': login.loginid}) }}">show</a>
+                    <a href="{{ path('logins_edit', {'loginid': login.loginid}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('logins_new') }}">Create new</a>
+{% endblock %}

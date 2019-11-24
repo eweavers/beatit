@@ -45,6 +45,11 @@ security:
         - { path: ^/gamereqs/gamerid/edit, roles: ROLE_USER }
         - { path: ^/gamereqs/gamerid, roles: ROLE_USER }
 
+        - { path: ^/loginu/, roles: ROLE_USER }
+        - { path: ^/loginu/new, roles: ROLE_USER }
+        - { path: ^/loginu/loginid/edit, roles: ROLE_USER }
+        - { path: ^/loginu/loginid, roles: ROLE_USER }
+
         - { path: ^/_profiler/, roles: ROLE_USER_IP, ip: 127.0.0.1 }
         - { path: ^/login/success, roles: ROLE_USER_IP, ip: 127.0.0.1 }
         - { path: ^/games/, roles: ROLE_USER_IP, ip: 127.0.0.1 }
@@ -56,6 +61,11 @@ security:
         - { path: ^/gamereqs/new, roles: ROLE_USER_IP, ip: 127.0.0.1 }
         - { path: ^/gamereqs/gamerid/edit, roles: ROLE_USER_IP, ip: 127.0.0.1 }
         - { path: ^/gamereqs/gamerid, roles: ROLE_USER_IP, ip: 127.0.0.1 }
+
+        - { path: ^/loginu/, roles: ROLE_USER_IP, ip: 127.0.0.1 }
+        - { path: ^/loginu/new, roles: ROLE_USER_IP, ip: 127.0.0.1 }
+        - { path: ^/loginu/loginid/edit, roles: ROLE_USER_IP, ip: 127.0.0.1 }
+        - { path: ^/loginu/loginid, roles: ROLE_USER_IP, ip: 127.0.0.1 }
 # this is the access control where i set the paths that the anonymous users 
 # can't access they have to be authenticated with the role user in order to allow them
 
