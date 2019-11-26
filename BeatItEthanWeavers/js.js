@@ -134,6 +134,7 @@ reqgameform.addEventListener('submit', function (e) {
         return;
       }
       response.json().then(function (data) {
+        console.log(data);
         if (data[0] == "You must be logged in") {
           M.toast({ html: 'You must be logged in to request a game' })
           M.toast({ html: 'You must be logged in to request a game' })
@@ -365,7 +366,7 @@ function populategameinfo(gameid) {
 
 function logout() {
   var url = 'ws.php?page=logout';
-
+  console.log('hi');
   fetch(url)
     .then(
       function (response) {

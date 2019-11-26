@@ -10,7 +10,12 @@ this will run the test developmental server (You will need wamp running all serv
 To access this server you will have to visit localhost:8000 in your web browser.
 use the URL localhost:8000/login to use the admin panel
 
+Username: Admin
+Password: test
+
 FRONTEND
+Make a new database and name it timetobeat and import the sql file provided
+
 This mobile app calculates all of the users submissions to the home page, users will submit a number in hours. 
 
 To test all submission aspects of the assignment you must be logged in test user is
@@ -21,7 +26,7 @@ Password: Test1
 When making an account your password must have one capital letter and a number, all user feedback is provided in
 popup toasts
 
-Name the database timetobeat
+Check the help doc in the settings for anything related to forms
 
 TECHNOLOGIES
 Materialise CSS - layout framework - both back end and front end

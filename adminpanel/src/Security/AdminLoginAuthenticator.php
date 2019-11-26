@@ -108,6 +108,6 @@ class AdminLoginAuthenticator extends AbstractFormLoginAuthenticator
 
     protected function getLoginUrl()
     {
-        return $this->urlGenerator->generate('app_loginl');
+        return $this->urlGenerator->generate('app_login');
     }
 }

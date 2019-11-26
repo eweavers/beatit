@@ -24,12 +24,12 @@ class sessions {
   }
 
   public function assignlogsess($username, $rows){
-    $_SESSION["username"] = $username;
-    $_SESSION["loginID"] = $rows['loginID'];
-    $_SESSION["userID"] = $rows['userID'];
-    $_SESSION["login"] = true;
+    $_SESSION['username'] = $username;
+    $_SESSION['loginID'] = $rows['loginID'];
+    $_SESSION['userID'] = $rows['userID'];
+    $_SESSION['login'] = true;
     $logsess = true;
-
+    
   }
 
   public function check_1second() {
@@ -56,7 +56,7 @@ class sessions {
       }
       $this->last_times = $this->last_timenew;
       unset($this->last_times);
-      if(sizeof($this->last_timenew) > 1000){
+      if(sizeof($this->last_timenew) > 500){
         return false;
       }else{
         return true;

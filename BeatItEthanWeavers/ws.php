@@ -5,13 +5,6 @@ include('model/validateob.php');
 header('Content-Type: text/json; charset=UTF-8');
 session_start();
 
-//ajax post X
-//html validation X
-//style game details X
-//pop up messages, rate limit and every action v
-//replace log in and reg page with writing X
-//loading spinners X
-
 
 //I check to see if the session is set here and if it isnt then I set it
 if (!isset($_SESSION['seshob'])) {

@@ -1,7 +1,7 @@
 security:
     encoders:
         App\Entity\Administrator:
-            algorithm: auto
+            algorithm: 'auto'
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
@@ -45,10 +45,10 @@ security:
         - { path: ^/gamereqs/gamerid/edit, roles: ROLE_USER }
         - { path: ^/gamereqs/gamerid, roles: ROLE_USER }
 
-        - { path: ^/loginu/, roles: ROLE_USER }
-        - { path: ^/loginu/new, roles: ROLE_USER }
-        - { path: ^/loginu/loginid/edit, roles: ROLE_USER }
-        - { path: ^/loginu/loginid, roles: ROLE_USER }
+        - { path: ^/logins/, roles: ROLE_USER }
+        - { path: ^/logins/new, roles: ROLE_USER }
+        - { path: ^/logins/loginid/edit, roles: ROLE_USER }
+        - { path: ^/logins/loginid, roles: ROLE_USER }
 
         - { path: ^/_profiler/, roles: ROLE_USER_IP, ip: 127.0.0.1 }
         - { path: ^/login/success, roles: ROLE_USER_IP, ip: 127.0.0.1 }
