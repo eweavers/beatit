@@ -14,6 +14,12 @@ Username: Admin
 Password: test
 
 FRONTEND
+
+//////////////////////////////////////////////////////////////////////
+{%#!DONT CHANGE THE FOLDERCHANGE AS DOMAINLOCK LOOKS AT FOLDERNAME!#%}
+//////////////////////////////////////////////////////////////////////
+
+
 Make a new database and name it timetobeat and import the sql file provided
 
 This mobile app calculates all of the users submissions to the home page, users will submit a number in hours. 
